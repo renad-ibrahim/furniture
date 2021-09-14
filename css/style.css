@@ -1,0 +1,284 @@
+/* start  golbal rules */
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body{
+    font: font-family: 'Work Sans', sans-serif;
+}
+:root{
+    --main-color: #ffc501;
+}
+.container{
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* ***** small ***** */
+@media (min-width: 768px){
+    .container{
+        width: 750px;
+    }
+}
+/* ***** Medium ***** */
+@media (min-width: 992px){
+    .container{
+        width: 970px;
+    }
+}
+/* ***** Large ***** */
+@media (min-width: 1200px){
+    .container{
+        width: 1170px;
+    }
+}
+/* end global rules */
+
+/* ********* satrt header ************** */
+.header{
+    background-color: var(--main-color);
+}
+.header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .container .phone-num a{
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+}
+.header .container .phone-num i {
+    font-size: 25px;
+}
+.header .container .phone-num:hover{
+    padding-left: 10px;
+    transition: 0.7s;
+}
+
+/* ********** start landing ************** */
+.landing{
+    background-color: var(--main-color);
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+.landing .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.landing .land-image img{
+    width: 500px;
+    transition: 0.3s;
+}
+.landing .land-text{
+    direction: rtl;
+}
+.landing .land-text p{
+    font-size: 20px;
+}
+.landing .land-text h1{
+    font-size: 50px;
+}
+/* ********* end landing ************* */
+/* ********* start about ************* */
+.about {
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+.about .content {
+    text-align: center;
+    direction: rtl;
+    line-height: 1.8;
+}
+.about .content h1{
+    font-size: 40px;
+}
+.about .content p{
+    font-size: 20px;
+}
+.about button{
+    border-radius: 10px;
+    height: 50px;
+    width: 225px;
+    background-color: var(--main-color);
+    box-shadow: 
+    12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+    -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+    border-radius: 50px;
+    margin-top: 30px;
+}
+.about p:nth-of-type(3){
+    color: #a8a8a8;
+}
+/* ********* end about *************** */
+/* ********** start steps *********** */
+.steps {
+    padding-top: 45px;
+    background-color: #ddd;
+    padding-bottom: 45px;
+}
+.steps .container {
+    position: relative;
+    text-align: center;
+}
+.steps .container h2{
+    text-align: center;
+}
+.steps .container .des {
+    width: 200px;
+    background-color: white;
+    margin-left: 475px;
+    margin-top: 45px;
+}
+.steps .container h3{
+    text-align: center;
+}
+.need1{
+    padding-top: 65px;
+}
+.need1 .right{
+    width: 50%;
+    direction: rtl;
+    display: inline-block;
+    background-color: #fff;
+    position: relative;
+    left: 287px;
+    border-radius: 10px;
+}
+.need1 .right h1{
+    padding-right: 20px;
+}
+.need1 .right p{
+    padding-right: 20px;
+    color: #949494;
+}
+.need1 .left{
+    background-color: #fff;
+    display: inline-block;
+    position: absolute;
+    width: 100px;
+    left: 460px;
+    border-radius: 10px;
+}
+.need1 .left p{
+    text-align: center;
+}
+.need1 .right:before{
+     content: '';
+    position: absolute;
+    top: 25px;
+    left: -27px;
+    border: 10px solid transparent;
+    border-left-color: #fff;
+    margin-top: -10px;
+}
+.need2{
+    padding-top: 
+}
+.need2 .right:before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -20px;
+    border: 10px solid transparent;
+    border-left-color: #fff;
+    margin-top: -10px;
+}
+.need2 .right{
+    width: 50%;
+    direction: rtl;
+    display: inline-block;
+    background-color: #fff;
+    position: relative;
+    border-radius: 10px;
+    right: 225px;
+}
+.need2 .right h1{
+    padding-right: 20px;
+}
+.need2 .right p{
+    padding-right: 20px;
+    color: #949494;
+}
+.need2 .left{
+    background-color: #fff;
+    display: inline-block;
+    position: relative;
+    width: 100px;
+    float: right;
+    right: 440px;
+    bottom: -50px;
+    border-radius: 10px;
+}
+.need2 .left p{
+    text-align: center;   
+}
+.end-desc{
+    width: 200px;
+    background-color: white;
+    margin-left: 475px;
+    margin-top: 45px;
+}
+.end-desc h3{
+    text-align: center;
+}
+.steps button{
+    border-radius: 10px;
+    height: 50px;
+    width: 225px;
+    background-color: var(--main-color);
+    box-shadow: 
+    12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+    -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+    border-radius: 50px;
+    margin-top: 30px;
+}
+.steps p:last-of-type{
+    text-align: center;
+}
+/* ********** end steps *********** */
+
+/* ************ start the end *********** */
+.end {
+    text-align: center;
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+.end h1{
+    direction: rtl;
+}
+.end input{
+    direction: rtl;
+    width: 35%;
+    height: 45px;
+    margin-bottom: 25px;
+    border-radius: 15px;
+    border: 1px solid var(--main-color);
+    padding-right: 10px;
+}
+.end button{
+    display: block;
+    margin-left: 455px;
+    margin-top: 10px;
+    border-radius: 10px;
+    height: 50px;
+    width: 225px;
+    background-color: var(--main-color);
+    box-shadow: 
+    12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+    -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+    border-radius: 50px;
+}
+.end p{
+    font-size: 25px;
+    padding-top: 35px;
+}
+.end p span{
+    color: red;
+}
